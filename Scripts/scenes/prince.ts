@@ -20,7 +20,7 @@ module scenes {
 
             // add door prince button
             this._DoorPrinceButton = new objects.Button(
-                "DoorPrinceButton",
+                "DoorButton",
                 config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._DoorPrinceButton);
@@ -30,7 +30,7 @@ module scenes {
             
             //add key prince button
             this._keyPrinceButton= new objects.Button(
-                "keyPrinceButton",
+                "KeyButton",
                 config.Screen.CENTER_X+50,
                 config.Screen.CENTER_Y+180
             );
