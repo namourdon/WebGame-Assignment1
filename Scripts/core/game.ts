@@ -124,6 +124,7 @@ function changeScene(): void {
         currentScene= keyp;
         console.log("Starting key prince scene");
         break;
+        
     }
     
 
