@@ -43,8 +43,8 @@ module scenes {
         
         // START_OVER Button click event handler
         private _startOverButtonClick(event: createjs.MouseEvent) {
-            // Switch to the INTRO Scene
-            scene = config.Scene.INTRO;
+            // Switch to the mainscreen Scene
+            scene = config.Scene.MAINSCREEN;
             changeScene();
         }
     }

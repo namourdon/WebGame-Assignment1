@@ -32,8 +32,8 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // START_OVER Button click event handler
         RightCave.prototype._startOverButtonClick = function (event) {
-            // Switch to the INTRO Scene
-            scene = config.Scene.INTRO;
+            // Switch to the mainscreen Scene
+            scene = config.Scene.MAINSCREEN;
             changeScene();
         };
         return RightCave;
