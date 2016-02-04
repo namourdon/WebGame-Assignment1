@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Mainscreen.prototype.start = function () {
             // add Intro Image
-            this._mainImage = new createjs.Bitmap("../../Assets/images/IntroCave.png");
+            this._mainImage = new createjs.Bitmap("../../Assets/images/key.png");
             this.addChild(this._mainImage);
             // add the warrior button to the MENU scene
             this._warriorBtn = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);

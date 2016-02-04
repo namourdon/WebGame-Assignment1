@@ -6,6 +6,10 @@
 /// <reference path="../objects/button.ts" />
 /// <reference path="../objects/scene.ts" />
 
-/// <reference path="../scenes/rightcave.ts" />
-/// <reference path="../scenes/leftcave.ts" />
-/// <reference path="../scenes/intro.ts" />
+/// <reference path="../scenes/mainscreen.ts" />
+/// <reference path="../scenes/prince.ts" />
+/// <reference path="../scenes/warrior.ts" />
+///<reference path="../scenes/princedoor.ts"/>
+///<reference path="../scenes/princekey.ts"/>
+///<reference path="../scenes/warriordoor.ts"/>
+///<reference path="../scenes/warriorkey.ts"/>
