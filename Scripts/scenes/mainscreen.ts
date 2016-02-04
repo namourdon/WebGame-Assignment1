@@ -5,10 +5,10 @@ module scenes {
         private _mainImage: createjs.Bitmap;
         private _warriorButton: objects.Button;
         private _princeButton: objects.Button;
-        private _doorW: objects.Button;
-        private _doorP:objects.Button;
-        private _keyW: objects.Button;
-        private _keyP:objects.Button;
+       // private _doorW: objects.Button;
+        //private _doorP:objects.Button;
+        //private _keyW: objects.Button;
+        //private _keyP:objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
@@ -42,7 +42,7 @@ module scenes {
             
             // Prince Button event listener
             this._princeButton.on("click", this._princeButtonClick, this);
-            
+            /*
             //add the warrior door button to the Menu Scene
             this._doorW= new objects.Button(
                 "DoorWarriorButton",
@@ -52,7 +52,7 @@ module scenes {
             
             // Prince Button event listener
             this._warriorButton.on("click", this._warriorButtonClick, this);
-            
+            */
             
             // add this scene to the global stage container
             stage.addChild(this);

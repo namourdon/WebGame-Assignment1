@@ -8,6 +8,10 @@ var scenes;
 (function (scenes) {
     var Mainscreen = (function (_super) {
         __extends(Mainscreen, _super);
+        // private _doorW: objects.Button;
+        //private _doorP:objects.Button;
+        //private _keyW: objects.Button;
+        //private _keyP:objects.Button;
         // CONSTRUCTOR ++++++++++++++++++++++
         function Mainscreen() {
             _super.call(this);
@@ -28,11 +32,17 @@ var scenes;
             this.addChild(this._princeButton);
             // Prince Button event listener
             this._princeButton.on("click", this._princeButtonClick, this);
+            /*
             //add the warrior door button to the Menu Scene
-            this._doorW = new objects.Button("DoorWarriorButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this._doorW= new objects.Button(
+                "DoorWarriorButton",
+                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_Y + 180);
             this.addChild(this._doorW);
+            
             // Prince Button event listener
             this._warriorButton.on("click", this._warriorButtonClick, this);
+            */
             // add this scene to the global stage container
             stage.addChild(this);
         };
