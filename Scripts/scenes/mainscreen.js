@@ -19,15 +19,15 @@ var scenes;
             this._mainImage = new createjs.Bitmap("../../Assets/images/key.png");
             this.addChild(this._mainImage);
             // add the warrior button to the MENU scene
-            this._warriorBtn = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
-            this.addChild(this._warriorBtn);
+            this._warriorButton = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            this.addChild(this._warriorButton);
             // warrior Button event listener
-            this._warriorBtn.on("click", this._warriorButtonClick, this);
+            this._warriorButton.on("click", this._warriorButtonClick, this);
             // add the prince button to the MENU scene
-            this._princeBtn = new objects.Button("PrinceButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
-            this.addChild(this._princeBtn);
+            this._princeButton = new objects.Button("PrinceButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this.addChild(this._princeButton);
             // Prince Button event listener
-            this._princeBtn.on("click", this._princeButtonClick, this);
+            this._princeButton.on("click", this._princeButtonClick, this);
             //add the warrior door button to the Menu Scene
             this._doorW = new objects.Button("DoorWarriorButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._doorW);
