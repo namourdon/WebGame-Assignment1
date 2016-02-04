@@ -9,13 +9,13 @@ var currentScene: objects.Scene;
 var scene: number;
 
 // Game Scenes
-var mainscreen: scenes.MainScreen;
-var warrior: scenes.Warrior;
-var prince: scenes.Prince;
-var doorw:scenes.DoorW;
-var doorp:scenes.DoorP;
-var keyw:scenes.KeyW;
-var keyp:scenes.KeyP;
+var mainscreen: scenes.Mainscreen;
+var warrior: scenes.WarriorScene;
+var prince: scenes.PrinceScene;
+var doorw:scenes.WarriorDoor;
+var doorp:scenes.PrinceDoor;
+var keyw:scenes.WarriorKey;
+var keyp:scenes.PrinceKey;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -74,31 +74,58 @@ function changeScene(): void {
         case config.Scene.MAINSCREEN:
             // show the MENU scene
             stage.removeAllChildren();
-            mainscreen = new scenes.();
+            mainscreen = new scenes.Mainscreen();
             currentScene = mainscreen;
             console.log("Starting main Scene");
             break;
         case config.Scene.WARRIOR:
             // show the PLAY scene
             stage.removeAllChildren();
-            warrior = new scenes.LeftCave();
+            warrior = new scenes.WarriorScene();
             currentScene = warrior;
             console.log("Starting warrior Scene");
             break;
         case config.Scene.PRINCE:
             // show the prince scene
             stage.removeAllChildren();
-            prince = new scenes.RightCave();
+            prince = new scenes.PrinceScene();
             currentScene = prince;
             console.log("Starting Prince Scene");
             break;
             
-        case config.Scene.DOORW:
-        //show the door scene
+         case config.Scene.DOORW:
+         //show the warrior door scene
+         stage.removeAllChildren();
+         doorw= new scenes.WarriorDoor();
+         currentScene=doorw;
+         console.log("Starting door warrior scene");
+         break;
+            
+        case config.Scene.DOORP:
+        //show the prince door scene
         stage.removeAllChildren();
-        doorw= new scenes.
+        doorp= new scenes.PrinceDoor();
+        currentScene= doorp;
+        console.log("Starting door prince scene");
+        break;
         
+        case config.Scene.KEYW:
+        //show the warrior key scene
+        stage.removeAllChildren();
+        keyw=new scenes.WarriorKey();
+        currentScene= keyw;
+        console.log("Starting key warrior scene");
+        break;
+        
+        case config.Scene.KEYP:
+        //show the prince key scene
+        stage.removeAllChildren();
+        keyp= new scenes.PrinceKey();
+        currentScene= keyp;
+        console.log("Starting key prince scene");
+        break;
     }
+    
 
     console.log(currentScene.numChildren);
 }
