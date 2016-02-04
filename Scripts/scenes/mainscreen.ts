@@ -27,7 +27,7 @@ module scenes {
             this._warriorButton = new objects.Button(
                 "WarriorButton",
                 config.Screen.CENTER_X - 100,
-                config.Screen.CENTER_Y + 180);
+                config.Screen.CENTER_Y + 150);
             this.addChild(this._warriorButton);
             
             // warrior Button event listener
@@ -37,7 +37,7 @@ module scenes {
             this._princeButton = new objects.Button(
                 "PrinceButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 180);
+                config.Screen.CENTER_Y + 150);
             this.addChild(this._princeButton);
             
             // Prince Button event listener

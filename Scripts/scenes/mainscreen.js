@@ -19,12 +19,12 @@ var scenes;
             this._mainImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._mainImage);
             // add the warrior button to the MENU scene
-            this._warriorButton = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            this._warriorButton = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._warriorButton);
             // warrior Button event listener
             this._warriorButton.on("click", this._warriorButtonClick, this);
             // add the prince button to the MENU scene
-            this._princeButton = new objects.Button("PrinceButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this._princeButton = new objects.Button("PrinceButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._princeButton);
             // Prince Button event listener
             this._princeButton.on("click", this._princeButtonClick, this);
