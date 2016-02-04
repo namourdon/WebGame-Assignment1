@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         PrinceScene.prototype.start = function () {
             // add prince Image
-            this._princeImage = new createjs.Bitmap("");
+            this._princeImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._princeImage);
             // add door prince button
             this._DoorPrinceButton = new objects.Button("DoorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 130);
