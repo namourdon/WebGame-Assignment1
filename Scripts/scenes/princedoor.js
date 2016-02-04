@@ -15,7 +15,7 @@ var scenes;
         // start method
         PrinceDoor.prototype.Start = function () {
             //add prince door image
-            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/Trapped.png");
+            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._princeDoorImage);
             //add the restart button to the Game over scene 
             this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
