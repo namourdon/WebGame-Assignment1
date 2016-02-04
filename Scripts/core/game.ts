@@ -9,9 +9,13 @@ var currentScene: objects.Scene;
 var scene: number;
 
 // Game Scenes
-var intro: scenes.Intro;
-var leftCave: scenes.LeftCave;
-var rightCave: scenes.RightCave;
+var mainscreen: scenes.MainScreen;
+var warrior: scenes.Warrior;
+var prince: scenes.Prince;
+var doorw:scenes.DoorW;
+var doorp:scenes.DoorP;
+var keyw:scenes.KeyW;
+var keyp:scenes.KeyP;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -33,7 +37,7 @@ function init(): void {
     setupStats(); 
     
     // set initial scene
-    scene = config.Scene.INTRO;
+    scene = config.Scene.MAINSCREEN;
     changeScene();
 }
 
@@ -67,27 +71,33 @@ function changeScene(): void {
     
     // Launch various scenes
     switch (scene) {
-        case config.Scene.INTRO:
+        case config.Scene.MAINSCREEN:
             // show the MENU scene
             stage.removeAllChildren();
-            intro = new scenes.Intro();
-            currentScene = intro;
-            console.log("Starting INTRO Scene");
+            mainscreen = new scenes.();
+            currentScene = mainscreen;
+            console.log("Starting main Scene");
             break;
-        case config.Scene.LEFT_CAVE:
+        case config.Scene.WARRIOR:
             // show the PLAY scene
             stage.removeAllChildren();
-            leftCave = new scenes.LeftCave();
-            currentScene = leftCave;
-            console.log("Starting LEFT_CAVE Scene");
+            warrior = new scenes.LeftCave();
+            currentScene = warrior;
+            console.log("Starting warrior Scene");
             break;
-        case config.Scene.RIGHT_CAVE:
-            // show the game OVER scene
+        case config.Scene.PRINCE:
+            // show the prince scene
             stage.removeAllChildren();
-            rightCave = new scenes.RightCave();
-            currentScene = rightCave;
-            console.log("Starting RIGHT_CAVE Scene");
+            prince = new scenes.RightCave();
+            currentScene = prince;
+            console.log("Starting Prince Scene");
             break;
+            
+        case config.Scene.DOORW:
+        //show the door scene
+        stage.removeAllChildren();
+        doorw= new scenes.
+        
     }
 
     console.log(currentScene.numChildren);

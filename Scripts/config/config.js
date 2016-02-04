@@ -4,9 +4,13 @@ var config;
     var Scene = (function () {
         function Scene() {
         }
-        Scene.INTRO = 0;
-        Scene.LEFT_CAVE = 1;
-        Scene.RIGHT_CAVE = 2;
+        Scene.MAINSCREEN = 0;
+        Scene.WARRIOR = 1;
+        Scene.PRINCE = 2;
+        Scene.DOORW = 3;
+        Scene.DOORP = 4;
+        Scene.KEYW = 5;
+        Scene.KEYP = 6;
         return Scene;
     })();
     config.Scene = Scene;

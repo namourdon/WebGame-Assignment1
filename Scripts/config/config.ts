@@ -2,9 +2,14 @@
 
     // Scene Constants
     export class Scene {
-        public static INTRO: number = 0;
-        public static LEFT_CAVE: number = 1;
-        public static RIGHT_CAVE: number = 2;
+        public static MAINSCREEN: number = 0;
+        public static WARRIOR: number = 1;
+        public static PRINCE: number = 2;
+        public static DOORW: number=3;
+        public static DOORP: number=4;
+        public static KEYW: number=5;
+        public static KEYP: number=6;
+        
     }
     
     
