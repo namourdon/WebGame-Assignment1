@@ -21,7 +21,7 @@ module scenes {
             // add door prince button
             this._DoorPrinceButton = new objects.Button(
                 "DoorButton",
-                config.Screen.CENTER_X+100,
+                config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 130);
             this.addChild(this._DoorPrinceButton);
            
@@ -31,8 +31,8 @@ module scenes {
             //add key prince button
             this._keyPrinceButton= new objects.Button(
                 "KeyButton",
-                config.Screen.CENTER_X+100,
-                config.Screen.CENTER_Y+130
+                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_Y + 130
             );
             this.addChild(this._keyPrinceButton);
             //key prince button event listener
