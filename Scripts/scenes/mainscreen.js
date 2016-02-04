@@ -3,7 +3,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-// INTRO SCENE
+// mainscreen SCENE
 var scenes;
 (function (scenes) {
     var Mainscreen = (function (_super) {
@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Mainscreen.prototype.start = function () {
             // add Intro Image
-            this._mainImage = new createjs.Bitmap("../../Assets/images/key.png");
+            this._mainImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._mainImage);
             // add the warrior button to the MENU scene
             this._warriorButton = new objects.Button("WarriorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
@@ -32,7 +32,7 @@ var scenes;
             this._doorW = new objects.Button("DoorWarriorButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._doorW);
             // Prince Button event listener
-            this._warriorBtn.on("click", this._warriorButtonClick, this);
+            this._warriorButton.on("click", this._warriorButtonClick, this);
             // add this scene to the global stage container
             stage.addChild(this);
         };

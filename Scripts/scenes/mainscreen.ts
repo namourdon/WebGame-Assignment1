@@ -1,4 +1,4 @@
-﻿// INTRO SCENE
+﻿// mainscreen SCENE
 module scenes {
     export class Mainscreen extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
@@ -20,7 +20,7 @@ module scenes {
         // Start Method
         public start(): void {
             // add Intro Image
-            this._mainImage = new createjs.Bitmap("../../Assets/images/key.png");
+            this._mainImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._mainImage);
             
             // add the warrior button to the MENU scene
