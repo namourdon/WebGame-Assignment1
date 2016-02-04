@@ -50,38 +50,8 @@ module scenes {
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._doorW);
             
-            //Door Prince Button event listener
-            this._doorP.on("click", this._doorPButtonClick, this);
-            
-             //add the Prince door button to the Menu Scene
-            this._doorP= new objects.Button(
-                "DoorPrinceButton",
-                config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 180);
-            this.addChild(this._doorP);
-            
-            //Door prince Button event listener
-            this._doorP.on("click", this._doorPButtonClick, this);
-            
-             //add the warrior key button to the Menu Scene
-            this._keyW= new objects.Button(
-                "keyWarriorButton",
-                config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 180);
-            this.addChild(this._keyW);
-            
-            //key warrior Button event listener
-            this._keyW.on("click", this._keyWButtonClick, this);
-            
-             //add the key Prince button to the Menu Scene
-            this._keyP= new objects.Button(
-                "KeyPrinceButton",
-                config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 180);
-            this.addChild(this._keyP);
-            
-            //key prince Button event listener
-            this._keyP.on("click", this._keyWButtonClick, this);
+            // Prince Button event listener
+            this._warriorBtn.on("click", this._warriorButtonClick, this);
             
             
             // add this scene to the global stage container
@@ -96,17 +66,17 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // LEFT_CAVE Button click event handler
-        private _leftCaveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.LEFT_CAVE;
+        // prince Button click event handler
+        private _princeButtonClick(event: createjs.MouseEvent) {
+            // Switch to the prince Scene
+            scene = config.Scene.PRINCE;
             changeScene();
         }
         
-        // LEFT_CAVE Button click event handler
-        private _rightCaveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.RIGHT_CAVE;
+        // warrior Button click event handler
+        private _warriorButtonClick(event: createjs.MouseEvent) {
+            // Switch to the warrior Scene
+            scene = config.Scene.WARRIOR;
             changeScene();
         }
     }
