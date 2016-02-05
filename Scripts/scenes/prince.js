@@ -19,7 +19,7 @@ var scenes;
             this._princeImage = new createjs.Bitmap("../../Assets/images/Prince.jpg");
             this.addChild(this._princeImage);
             // add door prince button
-            this._DoorPrinceButton = new objects.Button("RestartButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 130);
+            this._DoorPrinceButton = new objects.Button("DoorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 130);
             this.addChild(this._DoorPrinceButton);
             // door prince Button event listener
             this._DoorPrinceButton.on("click", this._DoorPrinceButtonClick, this);

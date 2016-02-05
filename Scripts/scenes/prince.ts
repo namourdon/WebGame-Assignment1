@@ -20,7 +20,7 @@ module scenes {
 
             // add door prince button
             this._DoorPrinceButton = new objects.Button(
-                "RestartButton",
+                "DoorButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 130);
             this.addChild(this._DoorPrinceButton);
