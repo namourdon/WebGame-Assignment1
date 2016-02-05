@@ -15,7 +15,7 @@ module scenes {
         // Start Method
         public start(): void {
             // add warrior Image
-            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.png");
+            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.jpg");
             this.addChild(this._warriorImage);
 
             // add door warrior button

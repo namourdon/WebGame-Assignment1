@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         WarriorScene.prototype.start = function () {
             // add warrior Image
-            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.png");
+            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.jpg");
             this.addChild(this._warriorImage);
             // add door warrior button
             this._DoorWarriorButton = new objects.Button("DoorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 130);
