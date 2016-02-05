@@ -29,6 +29,11 @@ module scenes{
             //add this scene to global container
             stage.addChild(this);
         }
+        
+        //play scene update here
+        public update():void{
+            
+        }
         //restart button click event handler
         private _restartButtonClick(event:createjs.MouseEvent){
             //switch to the mainscreen scene

@@ -25,6 +25,9 @@ var scenes;
             //add this scene to global container
             stage.addChild(this);
         };
+        //play scene update here
+        PrinceKey.prototype.update = function () {
+        };
         //restart button click event handler
         PrinceKey.prototype._restartButtonClick = function (event) {
             //switch to the mainscreen scene
