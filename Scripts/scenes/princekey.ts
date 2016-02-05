@@ -12,7 +12,7 @@ module scenes{
         // start method
         public Start():void{
             //add prince key image
-            this._princeKeyImage= new createjs.Bitmap("");
+            this._princeKeyImage= new createjs.Bitmap("../../Assets/images/Trapped.png");
             this.addChild(this._princeKeyImage);
             
             //add the restart button to the Game over scene 
