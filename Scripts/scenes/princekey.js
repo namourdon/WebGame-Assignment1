@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         PrinceKey.prototype.start = function () {
             // add LeftCave Image
-            this._princeKeyImage = new createjs.Bitmap("../../Assets/images/key.png");
+            this._princeKeyImage = new createjs.Bitmap("../../Assets/images/trappedPrince.jpg");
             this.addChild(this._princeKeyImage);
             // add the BACK button to the OVER scene
             this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
