@@ -18,7 +18,7 @@ var scenes;
             this._princeKeyImage = new createjs.Bitmap("../../Assets/images/Key.png");
             this.addChild(this._princeKeyImage);
             //add the restart button to the Game over scene 
-            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._restartButton);
             //Restart button event listener
             this._restartButton.on("click", this._restartButtonClick, this);

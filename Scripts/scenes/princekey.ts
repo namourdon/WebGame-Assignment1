@@ -18,7 +18,7 @@ module scenes{
             //add the restart button to the Game over scene 
             this._restartButton= new objects.Button(
                 "RestartButton",
-                config.Screen.CENTER_X,
+                config.Screen.CENTER_X-100,
                 config.Screen.CENTER_Y+180
             );
             this.addChild(this._restartButton);
