@@ -1,3 +1,6 @@
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:04/02/2016
 // Prince SCENE
 module scenes {
     export class PrinceScene extends objects.Scene {
@@ -51,12 +54,13 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // START_OVER Button click event handler
+        // Prince door Button click event handler
         private _DoorPrinceButtonClick(event: createjs.MouseEvent) {
             // Switch to the mainscreen Scene
             scene = config.Scene.DOORP;
             changeScene();
         }
+        //Prince key button click event handler
         private _keyPrinceButtonClick(event:createjs.MouseEvent){
             scene=config.Scene.KEYP;
             changeScene();

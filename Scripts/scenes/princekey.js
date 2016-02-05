@@ -3,7 +3,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-// Warrior door SCENE
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:05/02/2016
+// Prince Key SCENE
 var scenes;
 (function (scenes) {
     var PrinceKey = (function (_super) {
@@ -15,13 +18,13 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         PrinceKey.prototype.start = function () {
-            // add LeftCave Image
+            // add prince key Image
             this._princeKeyImage = new createjs.Bitmap("../../Assets/images/trapppedPrince.jpg");
             this.addChild(this._princeKeyImage);
-            // add the BACK button to the OVER scene
+            // add the Restart button to the OVER scene
             this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
-            // START_OVER Button event listener
+            // Restart Button event listener
             this._restartButton.on("click", this._restartButtonClick, this);
             // add this scene to the global stage container
             stage.addChild(this);
@@ -30,9 +33,9 @@ var scenes;
         PrinceKey.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
-        // START_OVER Button click event handler
+        // Restart Button click event handler
         PrinceKey.prototype._restartButtonClick = function (event) {
-            // Switch to the INTRO Scene
+            // Switch to the Main screen Scene
             scene = config.Scene.MAINSCREEN;
             changeScene();
         };

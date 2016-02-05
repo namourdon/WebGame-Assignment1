@@ -3,6 +3,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:05/02/2016
 // Warrior SCENE
 var scenes;
 (function (scenes) {

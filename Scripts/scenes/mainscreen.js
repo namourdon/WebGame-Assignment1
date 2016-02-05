@@ -3,6 +3,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:04/02/2016
 // mainscreen SCENE
 var scenes;
 (function (scenes) {
@@ -28,7 +31,7 @@ var scenes;
             // warrior Button event listener
             this._warriorButton.on("click", this._warriorButtonClick, this);
             // add the prince button to the MENU scene
-            this._princeButton = new objects.Button("PrinceButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 130);
+            this._princeButton = new objects.Button("prince", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 130);
             this.addChild(this._princeButton);
             // Prince Button event listener
             this._princeButton.on("click", this._princeButtonClick, this);
@@ -46,7 +49,7 @@ var scenes;
             // add this scene to the global stage container
             stage.addChild(this);
         };
-        // INTRO Scene updates here
+        // Main screen Scene updates here
         Mainscreen.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++

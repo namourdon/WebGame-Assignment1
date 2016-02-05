@@ -1,3 +1,6 @@
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:05/02/2016
 // Warrior SCENE
 module scenes {
     export class WarriorScene extends objects.Scene {

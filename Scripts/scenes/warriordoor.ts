@@ -1,3 +1,6 @@
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:05/02/2016
 // Warrior door SCENE
 module scenes {
     export class WarriorDoor extends objects.Scene {
@@ -14,18 +17,18 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add LeftCave Image
+            // add warrior door Image
             this._warriorDoorImage = new createjs.Bitmap("../../Assets/images/WarriorDoor.png");
             this.addChild(this._warriorDoorImage);
 
-            // add the BACK button to the OVER scene
+            // add the restart button
             this._restartButton = new objects.Button(
                 "RestartButton",
                 config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
            
-            // START_OVER Button event listener
+            // Restart Button event listener
             this._restartButton.on("click", this._restartButtonClick, this);
 
 
@@ -41,9 +44,9 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // START_OVER Button click event handler
+        // Restart  Button click event handler
         private _restartButtonClick(event: createjs.MouseEvent) {
-            // Switch to the INTRO Scene
+            // Switch to the Main screen Scene
             scene = config.Scene.MAINSCREEN;
             changeScene();
         }

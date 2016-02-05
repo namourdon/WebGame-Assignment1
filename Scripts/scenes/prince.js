@@ -3,6 +3,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:04/02/2016
 // Prince SCENE
 var scenes;
 (function (scenes) {
@@ -35,12 +38,13 @@ var scenes;
         PrinceScene.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
-        // START_OVER Button click event handler
+        // Prince door Button click event handler
         PrinceScene.prototype._DoorPrinceButtonClick = function (event) {
             // Switch to the mainscreen Scene
             scene = config.Scene.DOORP;
             changeScene();
         };
+        //Prince key button click event handler
         PrinceScene.prototype._keyPrinceButtonClick = function (event) {
             scene = config.Scene.KEYP;
             changeScene();

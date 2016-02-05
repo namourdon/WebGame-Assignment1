@@ -1,4 +1,7 @@
-﻿// mainscreen SCENE
+﻿//Nashia Amourdon
+//Date created:29/01/2016
+//Last modified:04/02/2016
+// mainscreen SCENE
 module scenes {
     export class Mainscreen extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
@@ -35,7 +38,7 @@ module scenes {
             
             // add the prince button to the MENU scene
             this._princeButton = new objects.Button(
-                "PrinceButton",
+                "prince",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 130);
             this.addChild(this._princeButton);
@@ -58,7 +61,7 @@ module scenes {
             stage.addChild(this);
         }
 
-        // INTRO Scene updates here
+        // Main screen Scene updates here
         public update(): void {
 
         }

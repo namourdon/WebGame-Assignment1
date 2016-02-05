@@ -62,7 +62,7 @@ function changeScene() {
             console.log("Starting main Scene");
             break;
         case config.Scene.WARRIOR:
-            // show the PLAY scene
+            // show the warrior scene
             stage.removeAllChildren();
             warrior = new scenes.WarriorScene();
             currentScene = warrior;
