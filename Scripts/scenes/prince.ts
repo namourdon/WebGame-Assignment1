@@ -15,7 +15,7 @@ module scenes {
         // Start Method
         public start(): void {
             // add prince Image
-            this._princeImage = new createjs.Bitmap("../../Assets/images/Key.png");
+            this._princeImage = new createjs.Bitmap("../../Assets/images/prince.png");
             this.addChild(this._princeImage);
 
             // add door prince button
