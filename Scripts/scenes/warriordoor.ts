@@ -22,7 +22,7 @@ module scenes {
             this._restartButton = new objects.Button(
                 "RestartButton",
                 config.Screen.CENTER_X,
-                config.Screen.CENTER_Y + 180);
+                config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
            
             // START_OVER Button event listener

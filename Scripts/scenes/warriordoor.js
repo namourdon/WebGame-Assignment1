@@ -19,7 +19,7 @@ var scenes;
             this._warriorDoorImage = new createjs.Bitmap("../../Assets/images/WarriorDoor.png");
             this.addChild(this._warriorDoorImage);
             // add the BACK button to the OVER scene
-            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
             // START_OVER Button event listener
             this._restartButton.on("click", this._restartButtonClick, this);

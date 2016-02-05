@@ -3,31 +3,36 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-//Prince door Scene
+// Warrior door SCENE
 var scenes;
 (function (scenes) {
     var PrinceDoor = (function (_super) {
         __extends(PrinceDoor, _super);
-        //constructor
+        // CONSTRUCTOR ++++++++++++++++++++++
         function PrinceDoor() {
             _super.call(this);
         }
-        // start method
-        PrinceDoor.prototype.Start = function () {
-            //add prince door image
-            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/key.png");
+        // PUBLIC METHODS +++++++++++++++++++++
+        // Start Method
+        PrinceDoor.prototype.start = function () {
+            // add LeftCave Image
+            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/monster.png");
             this.addChild(this._princeDoorImage);
-            //add the restart button to the Game over scene 
-            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            // add the BACK button to the OVER scene
+            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
-            //Restart button event listener
+            // START_OVER Button event listener
             this._restartButton.on("click", this._restartButtonClick, this);
-            //add this scene to global container
+            // add this scene to the global stage container
             stage.addChild(this);
         };
-        //restart button click event handler
+        // PLAY Scene updates here
+        PrinceDoor.prototype.update = function () {
+        };
+        //EVENT HANDLERS ++++++++++++++++++++
+        // START_OVER Button click event handler
         PrinceDoor.prototype._restartButtonClick = function (event) {
-            //switch to the mainscreen scene
+            // Switch to the INTRO Scene
             scene = config.Scene.MAINSCREEN;
             changeScene();
         };

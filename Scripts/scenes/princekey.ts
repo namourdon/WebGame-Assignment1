@@ -1,43 +1,50 @@
-//Prince key Scene
-module scenes{
-    export class PrinceKey extends objects.Scene{
-        // Private instances variables
-        private _princeKeyImage:createjs.Bitmap;
-        private _restartButton:objects.Button;
+// Warrior door SCENE
+module scenes {
+    export class PrinceKey extends objects.Scene {
+        //PRIVATE INSTANCE VARIABLES ++++++++++++
+        private _princeKeyImage: createjs.Bitmap;
+        private _restartButton: objects.Button;
         
-        //constructor
-        constructor(){
+        // CONSTRUCTOR ++++++++++++++++++++++
+        constructor() {
             super();
         }
-        // start method
-        public Start():void{
-            //add prince key image
-            this._princeKeyImage= new createjs.Bitmap("../../Assets/images/Key.png");
+        
+        // PUBLIC METHODS +++++++++++++++++++++
+        
+        // Start Method
+        public start(): void {
+            // add LeftCave Image
+            this._princeKeyImage = new createjs.Bitmap("../../Assets/images/key.png");
             this.addChild(this._princeKeyImage);
-            
-            //add the restart button to the Game over scene 
-            this._restartButton= new objects.Button(
+
+            // add the BACK button to the OVER scene
+            this._restartButton = new objects.Button(
                 "RestartButton",
-                config.Screen.CENTER_X-100,
-                config.Screen.CENTER_Y+180
-            );
+                config.Screen.CENTER_X,
+                config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
-            
-            //Restart button event listener
-            this._restartButton.on("click",this._restartButtonClick, this);
-            
-            //add this scene to global container
+           
+            // START_OVER Button event listener
+            this._restartButton.on("click", this._restartButtonClick, this);
+
+
+            // add this scene to the global stage container
             stage.addChild(this);
         }
-        
-        //play scene update here
-        public update():void{
-            
+
+        // PLAY Scene updates here
+        public update(): void {
+
         }
-        //restart button click event handler
-        private _restartButtonClick(event:createjs.MouseEvent){
-            //switch to the mainscreen scene
-            scene= config.Scene.MAINSCREEN;
+        
+        
+        //EVENT HANDLERS ++++++++++++++++++++
+        
+        // START_OVER Button click event handler
+        private _restartButtonClick(event: createjs.MouseEvent) {
+            // Switch to the INTRO Scene
+            scene = config.Scene.MAINSCREEN;
             changeScene();
         }
     }

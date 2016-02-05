@@ -3,34 +3,36 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-//Prince key Scene
+// Warrior door SCENE
 var scenes;
 (function (scenes) {
     var PrinceKey = (function (_super) {
         __extends(PrinceKey, _super);
-        //constructor
+        // CONSTRUCTOR ++++++++++++++++++++++
         function PrinceKey() {
             _super.call(this);
         }
-        // start method
-        PrinceKey.prototype.Start = function () {
-            //add prince key image
-            this._princeKeyImage = new createjs.Bitmap("../../Assets/images/Key.png");
+        // PUBLIC METHODS +++++++++++++++++++++
+        // Start Method
+        PrinceKey.prototype.start = function () {
+            // add LeftCave Image
+            this._princeKeyImage = new createjs.Bitmap("../../Assets/images/key.png");
             this.addChild(this._princeKeyImage);
-            //add the restart button to the Game over scene 
-            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            // add the BACK button to the OVER scene
+            this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
             this.addChild(this._restartButton);
-            //Restart button event listener
+            // START_OVER Button event listener
             this._restartButton.on("click", this._restartButtonClick, this);
-            //add this scene to global container
+            // add this scene to the global stage container
             stage.addChild(this);
         };
-        //play scene update here
+        // PLAY Scene updates here
         PrinceKey.prototype.update = function () {
         };
-        //restart button click event handler
+        //EVENT HANDLERS ++++++++++++++++++++
+        // START_OVER Button click event handler
         PrinceKey.prototype._restartButtonClick = function (event) {
-            //switch to the mainscreen scene
+            // Switch to the INTRO Scene
             scene = config.Scene.MAINSCREEN;
             changeScene();
         };
