@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         PrinceDoor.prototype.start = function () {
             // add LeftCave Image
-            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/monster.png");
+            this._princeDoorImage = new createjs.Bitmap("../../Assets/images/mons.jpg");
             this.addChild(this._princeDoorImage);
             // add the BACK button to the OVER scene
             this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 130);
