@@ -16,15 +16,15 @@ var scenes;
         // Start Method
         WarriorScene.prototype.start = function () {
             // add warrior Image
-            this._warriorImage = new createjs.Bitmap("");
+            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.png");
             this.addChild(this._warriorImage);
             // add door warrior button
-            this._DoorWarriorButton = new objects.Button("DoorWarriorButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._DoorWarriorButton = new objects.Button("DoorButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 130);
             this.addChild(this._DoorWarriorButton);
             // door warrior Button event listener
             this._DoorWarriorButton.on("click", this._DoorWarriorButtonClick, this);
             //add key warrior button
-            this._keyWarriorButton = new objects.Button("keyWarriorButton", config.Screen.CENTER_X + 50, config.Screen.CENTER_Y + 180);
+            this._keyWarriorButton = new objects.Button("KeyButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 130);
             this.addChild(this._keyWarriorButton);
             //key warrior button event listener
             this._keyWarriorButton.on("click", this._keyWarriorButtonClick, this);

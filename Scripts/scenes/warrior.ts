@@ -15,14 +15,14 @@ module scenes {
         // Start Method
         public start(): void {
             // add warrior Image
-            this._warriorImage = new createjs.Bitmap("");
+            this._warriorImage = new createjs.Bitmap("../../Assets/images/warrior.png");
             this.addChild(this._warriorImage);
 
             // add door warrior button
             this._DoorWarriorButton = new objects.Button(
-                "DoorWarriorButton",
-                config.Screen.CENTER_X,
-                config.Screen.CENTER_Y + 180);
+                "DoorButton",
+                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_Y + 130);
             this.addChild(this._DoorWarriorButton);
            
             // door warrior Button event listener
@@ -30,9 +30,9 @@ module scenes {
             
             //add key warrior button
             this._keyWarriorButton= new objects.Button(
-                "keyWarriorButton",
-                config.Screen.CENTER_X+50,
-                config.Screen.CENTER_Y+180
+                "KeyButton",
+                config.Screen.CENTER_X+100,
+                config.Screen.CENTER_Y+130
             );
             this.addChild(this._keyWarriorButton);
             //key warrior button event listener
