@@ -12,7 +12,7 @@ module scenes{
         // start method
         public Start():void{
             //add warrior door image
-            this._warriorDoorImage= new createjs.Bitmap("");
+            this._warriorDoorImage= new createjs.Bitmap("../../Assets/images/treasure.png");
             this.addChild(this._warriorDoorImage);
             
             //add the restart button to the Game over scene 

@@ -15,7 +15,7 @@ var scenes;
         // start method
         WarriorDoor.prototype.Start = function () {
             //add warrior door image
-            this._warriorDoorImage = new createjs.Bitmap("");
+            this._warriorDoorImage = new createjs.Bitmap("../../Assets/images/treasure.png");
             this.addChild(this._warriorDoorImage);
             //add the restart button to the Game over scene 
             this._restartButton = new objects.Button("RestartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
